@@ -1,0 +1,10 @@
+$first-font: "Open Sans";
+$font-sans-serif-fallback: Arial, Helvetica, sans-serif;
+$main-font: $first-font, $font-sans-serif-fallback;
+
+$main-font-color: #444444;
+$black: #000;
+
+$mobile-widths-only: ("max-width: 767px");
+$tablet-widths: ("min-width: 768px");
+$desktop-widths: ("min-width: 1250px");

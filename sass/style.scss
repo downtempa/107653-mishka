@@ -1,5 +1,9 @@
+@import "fonts.scss";
 @import "normalize";
+@import "variables.scss";
+@import "scafolding.scss";
 
+@import "blocks/page.scss";
 @import "blocks/btn.scss";
 @import "blocks/link.scss";
 @import "blocks/fieldset.scss";
@@ -14,7 +18,7 @@
 @import "blocks/main.scss";
 @import "blocks/logo.scss";
 @import "blocks/menu-toggle.scss";
-@import "blocks/main-ngitav.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/search.scss";
 @import "blocks/basket.scss";
 @import "blocks/promo.scss";
