@@ -1,0 +1,12 @@
+.basket {
+  border-top: 1px solid #ececec;
+  text-align: center;
+
+  .basket__status {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $black;
+    text-decoration: none;
+  }
+}
