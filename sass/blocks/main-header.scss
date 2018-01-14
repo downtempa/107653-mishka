@@ -1,0 +1,22 @@
+.main-header {
+
+  &__top-panel {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__logo {
+    flex-grow: 1;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    background-color: #ffffff;
+  }
+}

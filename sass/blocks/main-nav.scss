@@ -1,17 +1,18 @@
 .main-nav {
-
-  .main-nav__list {
+  &__list {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
   }
 
-  .main-nav__item {
+  &__item {
     border-top: 1px solid #ececec;
   }
 
-  .main-nav__link {
+  &__link {
+    display: block;
+    padding: 28px 10px;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;

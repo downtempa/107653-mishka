@@ -1,15 +1,16 @@
 .search {
-  border-top: 1px solid #ececec;
-  text-align: center;
-
-  .search__btn {
+  &__btn {
+    display: block;
+    padding: 28px 10px;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
     color: $black;
     text-decoration: none;
+    border-top: 1px solid #ececec;
+    text-align: center;
   }
-  .search__icon {
+  &__icon {
 
   }
 }

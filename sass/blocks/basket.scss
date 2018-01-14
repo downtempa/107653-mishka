@@ -1,8 +1,13 @@
 .basket {
-  border-top: 1px solid #ececec;
-  text-align: center;
 
-  .basket__status {
+  &__link {
+    display: block;
+    padding: 28px 10px;
+    border-top: 1px solid #ececec;
+    text-align: center;
+  }
+
+  &__status {
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
