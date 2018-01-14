@@ -1,0 +1,21 @@
+.logo {
+  transition: all 0.3s;
+
+  &__link {
+    display: block;
+    color: #000000;
+  }
+
+  &__link svg {
+    fill: #000000;
+    transition: all 0.3s;
+  }
+
+  &__link:hover svg {
+    fill: #666666;
+  }
+
+  &__link:active svg {
+    fill: #b2b2b2;
+  }
+}
