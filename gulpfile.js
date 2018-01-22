@@ -9,6 +9,7 @@ var server = require("browser-sync").create();
 
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
+var rename = require("gulp-rename");
 var path = require('path');
 
 gulp.task("style", function() {
@@ -58,5 +59,6 @@ gulp.task('svgstore', function () {
       }
     }))
     .pipe(svgstore())
-    .pipe(gulp.dest('test/dest'));
+    .pipe((rename('svg-sprite.svg')))
+    .pipe(gulp.dest('img/svg'));
 });

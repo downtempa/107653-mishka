@@ -3,12 +3,20 @@
   &__top-panel {
     display: flex;
     align-items: center;
+    height: 80px;
     padding-left: 30px;
     padding-right: 30px;
+    border-bottom: 1px solid #ececec;
   }
 
   &__logo {
-    flex-grow: 1;
+    margin: auto;
+  }
+
+  &__menu-toggle {
+    position: absolute;
+    top: 30px;
+    right: 15px;
   }
 
   &__menu {
@@ -18,5 +26,13 @@
     width: 100%;
     border-bottom: 1px solid #ececec;
     background-color: #ffffff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  &__menu.js-active {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

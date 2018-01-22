@@ -1,8 +1,12 @@
 // main menu toggle
-var menuToggle = document.querySelector('#main-menu-toggle');
+var mobileMenuToggle = document.querySelector('#main-menu-toggle');
+var mobileMenu = document.querySelector('#mobile-menu');
 
-menuToggle.onclick = function() {
+
+mobileMenuToggle.onclick = function() {
   this.classList.toggle('js-active');
+  mobileMenu.classList.toggle('js-active');
 }
 
-console.log(menuToggle);
+// svg for everybody
+svg4everybody();
