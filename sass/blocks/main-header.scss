@@ -10,16 +10,34 @@
     height: 80px;
     background-color: #ffffff;
     border-bottom: 1px solid #ececec;
+
+    @media ($tablet-width) {
+      position: static;
+      height: auto;
+    }
   }
 
   &__logo {
     margin: auto;
+
+    @media ($tablet-width) {
+      position: static;
+      margin: 0;
+      margin-right: auto;
+      z-index: 100;
+    }
   }
 
   &__menu-toggle {
     position: absolute;
     top: 28px;
     right: 29px;
+
+    @media ($tablet-width) {
+      & {
+        display: none;
+      }
+    }
   }
 
   &__menu {
@@ -33,6 +51,34 @@
     opacity: 0;
     z-index: 100;
     transition: all 0.3s ease-in;
+
+    @media ($tablet-width) {
+      & {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        display: flex;
+        justify-content: flex-end;
+        transform: translate(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__nav {
+    @media ($tablet-width) {
+      position: absolute;
+      left: 0px;
+      top: 85px;
+    }
+  }
+
+  &__service-panel {
+    @media($tablet-width) {
+      display: flex;
+    }
   }
 
   &__menu.js-active {

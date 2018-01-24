@@ -9,11 +9,11 @@ body {
   min-width: 260px;
   margin: 0 auto;
 
-  @media ($tablet-widths) {
+  @media ($tablet-width) {
     max-width: 668px;
   }
 
-  @media ($desktop-widths) {
+  @media ($desktop-width) {
     max-width: 1050px;
   }
 }
