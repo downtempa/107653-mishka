@@ -14,6 +14,7 @@
     @media ($tablet-width) {
       position: static;
       height: auto;
+      border-bottom: none;
     }
   }
 
@@ -22,8 +23,11 @@
 
     @media ($tablet-width) {
       position: static;
+      height: 88px;
       margin: 0;
+      margin-left: -13px;
       margin-right: auto;
+      padding-top: 7px;
       z-index: 100;
     }
   }
@@ -34,9 +38,7 @@
     right: 29px;
 
     @media ($tablet-width) {
-      & {
-        display: none;
-      }
+      display: none;
     }
   }
 
@@ -53,25 +55,31 @@
     transition: all 0.3s ease-in;
 
     @media ($tablet-width) {
-      & {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 50;
-        display: flex;
-        justify-content: flex-end;
-        transform: translate(0);
-        opacity: 1;
-      }
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      z-index: 50;
+      display: flex;
+      justify-content: flex-end;
+      transform: translate(-50%);
+      border-bottom: none;
+      opacity: 1;
     }
   }
 
   &__nav {
     @media ($tablet-width) {
       position: absolute;
-      left: 0px;
-      top: 85px;
+      left: 0;
+      top: 106px;
+      padding-left: 6px;
+    }
+  }
+
+  &__basket {
+    @media ($tablet-width) {
+      margin-right: -8px;
     }
   }
 
@@ -89,5 +97,9 @@
   &__bottom-panel {
     padding-top: 250px;
     background-color: #eeeeee;
+
+    @media ($tablet-width) {
+      border-top: 1px solid #ececec;
+    }
   }
 }

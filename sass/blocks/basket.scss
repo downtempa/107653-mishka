@@ -1,11 +1,37 @@
 .basket {
-
   &__link {
     display: block;
     padding: 22px 10px 25px;
     padding-left: 31px;
     border-top: 1px solid #ececec;
+    opacity: 1;
+    transition: all 0.3s;
     /* text-align: center; */
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media ($tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 88px;
+      padding: 0;
+      padding-bottom: 3px;
+      padding-left: 32px;
+    }
+  }
+
+  &__link svg {
+    width: 20px;
+    height: 20px;
+    fill: #d3d2d2;
+    transition: all 0.3s;
+  }
+
+  &__link:hover svg {
+    fill: #63d1bb;
   }
 
   &__icon {
@@ -13,10 +39,7 @@
     top: 6px;
   }
 
-  &__icon svg {
-    width: 20px;
-    height: 20px;
-  }
+
 
   &__status {
     margin-left: 20px;
@@ -25,5 +48,15 @@
     font-weight: 700;
     color: $black;
     text-decoration: none;
+    opacity: 1;
+    transition: all 0.3s;
+
+    @media ($tablet-width) {
+      margin-left: 30px;
+    }
+  }
+
+  &__link:hover &__status {
+    opacity: 0.6;
   }
 }

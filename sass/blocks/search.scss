@@ -9,6 +9,32 @@
     color: #000000;
     text-decoration: none;
     border-top: 1px solid #ececec;
+
+    @media ($tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 88px;
+      width: 84px;
+      padding: 0;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+    }
+  }
+
+  &__btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #d3d2d2;
+    transition: all 0.3s;
+  }
+
+  &__btn:hover svg {
+    fill: #63d1bb;
+  }
+
+  &__btn:active svg {
+    opacity: 0.3;
   }
 
   &__icon {
@@ -16,10 +42,7 @@
     top: 5px;
   }
 
-  &__icon svg {
-    width: 18px;
-    height: 18px;
-  }
+
 
   &__label {
     margin-left: 22px;
