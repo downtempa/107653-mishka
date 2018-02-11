@@ -1,0 +1,7 @@
+.service-menu {
+  display: none;
+
+  @media ($desktop-width) {
+    display: block;
+  }
+}

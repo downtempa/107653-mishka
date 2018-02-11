@@ -11,6 +11,11 @@ body {
   color: $main-font-color;
   font-size: 15px;
   line-height: 30px;
+  padding-top: 80px;
+
+  @media ($tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .container {
@@ -40,4 +45,10 @@ img {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+.section-title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
 }

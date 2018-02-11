@@ -1,0 +1,86 @@
+.promo {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 27px;
+    padding-right: 50%;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #63d1bb;
+    text-decoration: none;
+    transform: translateY(0);
+    transition: all 0.3s;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: #63d1bb;
+      transform: translateY(0);
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &:active {
+      color: #97e2d2;
+    }
+
+    &:hover::after {
+      transform: translateY(5px);
+    }
+  }
+
+  &__item--toy &__link {
+    background-color: #56c3b2;
+  }
+
+  &__item--toy &__link::after {
+    background-color: #56c3b2;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 27px;
+    display: block;
+    width: 60px;
+    height: 66px;
+    background-image: url("/img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    background-position: 50% 4px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  &__item--toy &__icon {
+    background-image: url("/img/icon-toy.svg");
+    background-size: 60px;
+  }
+
+  &__link:hover &__icon {
+    opacity: 0.7;
+  }
+
+  &__link:active &__icon {
+    opacity: 0.3;
+  }
+}
