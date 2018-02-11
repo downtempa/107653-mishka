@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -51,4 +53,14 @@ img {
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+
+  @media ($tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media ($desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

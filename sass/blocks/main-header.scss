@@ -34,6 +34,7 @@
     @media ($desktop-width) {
       position: absolute;
       left: 50%;
+      top: 0;
       transform: translateX(-50%);
       margin-left: 0;
     }
@@ -89,11 +90,13 @@
       display: flex;
       width: 100%;
       justify-content: space-between;
+      padding-right: 50%;
     }
 
     @media ($desktop-width) {
       position: static;
       width: auto;
+      padding-right: 0;
     }
   }
 
@@ -114,17 +117,6 @@
     transform: translateX(0);
   }
 
-  &__promo-text {
-    display: none;
-
-    @media ($tablet-width) {
-      display: block;
-      color: #444444;
-      font-size: 15px;
-      line-height: 24px;
-    }
-  }
-
   &__bottom-panel {
     padding-top: 52px;
     background-color: #fafafa;
@@ -138,12 +130,97 @@
     }
 
     @media ($tablet-width) {
+      position: relative;
+      padding-top: 626px;
+      background-image: url("/img/hero-desktop@1x.jpg");
+      background-size: 1150px auto;
+      background-position: 50% 0;
       border-top: 1px solid #ececec;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("/img/hero-desktop@2x.jpg");
+      }
+    }
+
+    @media ($desktop-width) {
+      padding-top: 626px;
+      background-size: 1250px 746px;
     }
   }
 
   &__bottom-panel .section-title {
+    width: 260px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 122px;
     text-align: center;
+
+    @media ($tablet-width) {
+      width: 530px;
+      position: absolute;
+      top: 124px;
+      z-index: 5;
+      left: 50%;
+      margin-bottom: 0;
+      transform: translateX(-50%);
+    }
+
+    @media ($desktop-width) {
+      width: 700px;
+      top: 118px;
+    }
+  }
+
+  &__sub-menu {
+    @media ($tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+
+  &__sub-menu-inner {
+    @media ($tablet-width) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      max-width: 668px;
+      margin: 0 auto;
+      padding-top: 17px;
+      padding-left: 50%;
+    }
+
+    @media ($desktop-width) {
+      max-width: 1050px;
+      justify-content: space-between;
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__promo-text {
+    display: none;
+
+    @media ($tablet-width) {
+      //position: absolute;
+      //top: 17px;
+      //left: 50%;
+      //width: 100%;
+      //max-width: 668px;
+      display: block;
+      //padding-left: 400px;
+      color: #444444;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: right;
+      //transform: translateX(-50%);
+    }
+
+    @media ($desktop-width) {
+      //max-width: 1050px;
+      //padding-left: 570px;
+    }
   }
 }
