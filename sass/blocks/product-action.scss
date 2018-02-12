@@ -7,17 +7,29 @@
     padding-bottom: 72px;
   }
 
+  @media ($desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 95px;
+  }
+
   &::after {
-    position: absolute;
-    display: block;
-    content: "";
-    left: 0;
-    bottom: 0;
-    height: 23px;
-    width: 100%;
-    background-image: url("/img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: 50% 50%;
-    background-size: 100% 23px;
+    @media ($tablet-width) {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 0;
+      bottom: 0;
+      height: 23px;
+      width: 100%;
+      background-image: url("/img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-position: 50% 50%;
+      background-size: 100% 23px;
+    }
+
+    @media ($desktop-width) {
+      background-position: 65%;
+      background-size: 1050px;
+    }
   }
 }
