@@ -74,6 +74,8 @@
   }
 
   &__item:first-child &__link {
-    padding-left: 0;
+    @media ($tablet-width) {
+      padding-left: 0;
+    }
   }
 }

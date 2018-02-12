@@ -14,7 +14,6 @@ body {
   font-size: 15px;
   line-height: 30px;
   padding-top: 80px;
-
   @media ($tablet-width) {
     padding-top: 0;
   }
@@ -23,9 +22,12 @@ body {
 .container {
   min-width: 260px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media ($tablet-width) {
     max-width: 668px;
+    padding: 0;
   }
 
   @media ($desktop-width) {
@@ -50,9 +52,10 @@ img {
 }
 
 .section-title {
-  font-size: 27px;
+  font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+  color: #000000;
 
   @media ($tablet-width) {
     font-size: 43px;

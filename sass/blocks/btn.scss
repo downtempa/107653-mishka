@@ -1,0 +1,28 @@
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px 15px;
+  color: #444444;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  text-align: center;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: #858585;
+    background-color: #444444;
+    text-decoration: none;
+  }
+}
