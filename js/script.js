@@ -10,3 +10,16 @@ mobileMenuToggle.onclick = function() {
 
 // svg for everybody
 svg4everybody();
+
+// tiny-slider on main-page (review-slider)
+var slider = tns({
+  container: '.slider--review',
+  items: 1,
+  slideBy: 'page',
+  autoplay: true,
+  nav: false,
+  arrowKeys: true,
+  autoplayButtonOutput: false,
+  mouseDrag: true,
+  controlsContainer: document.querySelector('.slider__control')
+});

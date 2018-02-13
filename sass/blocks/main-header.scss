@@ -63,6 +63,11 @@
     z-index: 100;
     transition: all 0.3s ease-in;
 
+    @media ($mobile-width-only) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     @media ($tablet-width) {
       position: absolute;
       top: 0;
