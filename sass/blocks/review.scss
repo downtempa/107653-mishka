@@ -1,6 +1,139 @@
 .review {
-  padding-left: 30px;
-  padding-right: 30px;
+  position: relative;
 
+  @media ($tablet-width) {
+    margin-top: 27px;
+  }
 
+  @media ($desktop-width) {
+    margin-top: 33px;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 23px;
+    width: 100%;
+    background-image: url("/img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    background-size: 320px 23px;
+
+    @media ($tablet-width) {
+      background-size: 100% 23px;
+    }
+
+    @media ($desktop-width) {
+      background-position: 65%;
+      background-size: 1050px;
+    }
+  }
+
+  &__bg-holder {
+    padding-top: 10px;
+    padding-bottom: 57px;
+
+    @media ($tablet-width) {
+      padding-top: 41px;
+      padding-bottom: 135px;
+      background-image: url("/img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 350px 457px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("/img/review@2x.jpg");
+      }
+    }
+
+    @media ($desktop-width) {
+      max-width: 1050px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 27px;
+      padding-bottom: 187px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    min-width: 260px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media ($tablet-width) {
+      max-width: 668px;
+      padding: 0;
+    }
+
+    @media ($desktop-width) {
+      max-width: 1050px;
+      padding-left: 174px;
+    }
+  }
+
+  &__list {
+    margin-top: 3px;
+
+    @media ($tablet-width) {
+      margin-top: 14px;
+    }
+
+    @media ($desktop-width) {
+      margin-top: 4px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 27px;
+
+    @media ($tablet-width) {
+      margin-bottom: 57px;
+    }
+
+    @media ($desktop-width) {
+      margin-bottom: 39px;
+      padding-right: 85px;
+    }
+  }
+
+  &__author-name {
+    margin-bottom: 2px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+
+    @media ($tablet-width) {
+      letter-spacing: 0.7px;
+    }
+  }
+
+  &__author-nickname {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  &__btn-box {
+    @media ($tablet-width) {
+      position: absolute;
+      top: 2px;
+      right: 0;
+    }
+
+    @media ($desktop-width) {
+      top: 8px;
+    }
+  }
+
+  &__btn {
+    @media ($tablet-width) {
+      width: auto;
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
 }

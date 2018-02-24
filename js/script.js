@@ -16,7 +16,7 @@ var slider = tns({
   container: '.slider--review',
   items: 1,
   slideBy: 'page',
-  autoplay: true,
+  autoplay: false,
   nav: false,
   arrowKeys: true,
   autoplayButtonOutput: false,
