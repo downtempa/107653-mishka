@@ -177,17 +177,16 @@
             </div>
           </div>
         </div>
-
       </section>
     </div>
     <footer class="main-footer">
       <div class="main-footer__inner">
         <div class="main-footer__contacts  contacts">
-          <div class="contacts__title">Контакты</div>
+          <div class="contacts__title  section-title">Контакты</div>
           <div class="contacts__item">
             <div class="contacts__type">e-mail:</div>
             <div class="contacts__value">
-              <a class="link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="link" href="mailto:info@mimimishkashop.ru" title="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </div>
           </div>
           <div class="contacts__item">
@@ -200,29 +199,38 @@
           </div>
         </div>
         <div class="main-footer__map">
-          <div class="map">карта</div>
+          <div class="map" id="map"></div>
         </div>
         <div class="main-footer__feedback">
-          <a href="#" class="btn">Напишите нам</a>
+          <a href="#" class="btn" title="Напишите нам">Напишите нам</a>
         </div>
-        <div class="main-footer__bottom-panel">
+      </div>
+      <div class="main-footer__bottom-panel">
+        <div class="main-footer__bottom-panel-container">
+          <div class="main-footer__logo  logo  logo--footer">
+            <a href="" class="logo__link" title="Интернет-магазин Мишка">
+              <svg width="101" height="34" role="img" title="Интернет-магазин Мишка"><use
+                xlink:href="img/svg/svg-sprite.svg#logo-footer"></use></svg>
+            </a>
+          </div>
           <div class="main-footer__social  social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="social__link">instagram</a>
+                <a href="#" class="social__link" title="instagram"><svg width="25" height="25" role="img" title="instagram"><use xlink:href="img/svg/svg-sprite.svg#icon-insta"></use></svg></a>
+              </li>
+              <li class="social__item  social__item--fb">
+                <a href="#" class="social__link" title="facebook"><svg width="25" height="25" role="img" title="facebook"><use xlink:href="img/svg/svg-sprite.svg#icon-fb"></use></svg></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">facebook</a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">twitter</a>
+                <a href="#" class="social__link" title="twitter"><svg width="25" height="25" role="img" title="twitter"><use xlink:href="img/svg/svg-sprite.svg#icon-twitter"></use></svg></a>
               </li>
             </ul>
           </div>
           <div class="main-footer__copyright  copyright">
-            <span class="copyright__title"></span>
-            <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank"
-               title="HTML Academy">HTML Academy</a>
+            <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank" title="HTML Academy">
+              <span class="copyright__title">Разработано</span>
+              <svg width="25" height="25" role="img" title="twitter"><use xlink:href="img/svg/svg-sprite.svg#logo-htmlacademy"></use></svg>
+            </a>
           </div>
         </div>
       </div>
@@ -236,6 +244,7 @@
   </script>
   <script src="js/picturefill.min.js" async></script>
   <script src="/libs/tiny-slider/min/tiny-slider.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

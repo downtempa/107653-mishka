@@ -1,0 +1,49 @@
+.social {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+
+    &--fb {
+      position: relative;
+      top: -4px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    transition: all 0.3s;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__link svg {
+    width: 26px;
+    height: 21px;
+    fill: #231f20;
+    transition: all 0.3s;
+  }
+
+  &__item--fb svg {
+    width: 28px;
+    height: 29px;
+  }
+
+  &__link:hover svg {
+    fill: $aquamarine;
+  }
+}

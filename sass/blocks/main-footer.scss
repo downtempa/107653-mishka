@@ -1,0 +1,145 @@
+.main-footer {
+  padding-top: 30px;
+
+  @media ($tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 70px;
+  }
+
+  &__inner {
+    @media ($desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1050px;
+      margin: 0 auto;
+      margin-bottom: 104px;
+    }
+  }
+
+  &__contacts {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 67px;
+
+    @media ($tablet-width) {
+      max-width: 668px;
+      margin: 0 auto;
+      margin-bottom: 47px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 15px;
+    }
+
+    @media ($desktop-width) {
+      max-width: none;
+      width: 50%;
+      margin-bottom: 0;
+      padding-left: 170px;
+      padding-top: 70px;
+      padding-right: 25px;
+    }
+  }
+
+  &__map {
+    margin-bottom: 40px;
+
+    @media ($tablet-width) {
+      margin-bottom: 56px;
+    }
+
+    @media ($desktop-width) {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__feedback {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 39px;
+
+    @media ($tablet-width) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 57px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media ($desktop-width) {
+      display: block;
+      padding-left: 175px;
+      width: 50%;
+      margin-bottom: 0;
+      margin-top: -50px;
+    }
+  }
+
+  &__feedback .btn {
+    @media ($tablet-width) {
+      display: inline-block;
+      width: auto;
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+  }
+
+  &__bottom-panel {
+    background-color: #f1f1f1;
+
+    @media ($tablet-width) {
+      padding-top: 34px;
+      padding-bottom: 29px;
+    }
+  }
+
+  &__bottom-panel-container {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media ($tablet-width) {
+      max-width: 668px;
+      margin: 0 auto;
+      display: flex;
+      padding-left: 0;
+      padding-right: 0;
+      align-items: center;
+    }
+
+    @media ($desktop-width) {
+      max-width: 1050px;
+    }
+  }
+
+  &__social {
+    padding-top: 29px;
+    margin-bottom: 21px;
+
+    @media ($tablet-width) {
+      width: 33.33%;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @media ($tablet-width) {
+      display: block;
+      width: 33.33%;
+      padding-left: 21px;
+    }
+
+    @media ($desktop-width) {
+      padding-left: 0;
+    }
+  }
+
+  &__copyright {
+    @media ($tablet-width) {
+      width: 33.33%;
+    }
+  }
+}

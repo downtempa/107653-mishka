@@ -27,6 +27,8 @@
     width: 50%;
     padding-top: 11px;
     padding-bottom: 11px;
+    background-color: #ffffff;
+    transition: all 0.3s;
 
     &:first-child {
       border-right: 1px solid #ececec;
@@ -34,6 +36,15 @@
       @media ($tablet-width) {
         border-right: none;
       }
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

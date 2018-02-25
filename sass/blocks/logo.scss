@@ -18,4 +18,18 @@
   &__link:active svg {
     fill: #b2b2b2;
   }
+
+  &--footer .logo__link {
+    display: inline-block;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  &--footer .logo__link:hover svg {
+    fill: $aquamarine;
+  }
+
+  &--footer .logo__link:active {
+    opacity: 0.3;
+  }
 }
